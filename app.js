@@ -48,3 +48,7 @@ console.log(subTotal);
 const tax = subTotal / 10;
 const total = subTotal + tax;
 console.log(total);
+
+const category = "pen";
+const performer = category + "-teller";
+console.log(performer);
