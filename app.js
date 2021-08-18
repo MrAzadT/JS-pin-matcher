@@ -32,11 +32,16 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 
   secondInput.value = "";
 
+  const pinMatched = document.getElementById("pinMatched");
+  pinMatched.style.display = "block";
+  const pinDontMatched = document.getElementById("pinDon'tMatched");
+  pinDontMatched.style.display = "block";
+
   if (newFirstInput == newSecondInput) {
-    console.log("matchrd");
-    document.getElementById("pinMatched").style.display = "block";
+    pinMatched.style.display = "block";
+    pinDontMatched.style.display = "none";
   } else {
-    console.log("hiiiii");
-    document.getElementById("pinDon'tMatched").style.display = "block";
+    pinMatched.style.display = "none";
+    pinDontMatched.style.display = "block";
   }
 });
