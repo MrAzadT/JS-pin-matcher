@@ -9,7 +9,14 @@ function generatePin() {
 document.getElementById("calculatorNumbers").addEventListener("click", (e) => {
   const pinCode = e.target.innerText;
   const secondInput = document.getElementById("secondInput");
-  const newPin = secondInput.value;
-  const newPinCode = newPin + pinCode;
-  secondInput.value = newPinCode;
+
+  if (isNaN(pinCode)) {
+    if (pinCode == "C") {
+      secondInput.value = "";
+    }
+  } else {
+    const newPin = secondInput.value;
+    const newPinCode = newPin + pinCode;
+    secondInput.value = newPinCode;
+  }
 });
