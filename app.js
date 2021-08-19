@@ -51,5 +51,7 @@
 // const index = task.toLowerCase().indexOf("M");
 // console.log(index);
 
-const str1 = "Bangladesh is a beautiful country";
-console.log(str1.endsWith("country"));
+// const str1 = "Bangladesh is a beautiful country";
+// console.log(str1.endsWith("country"));
+
+for (let i==0; i<10;i++){}
